@@ -47,16 +47,16 @@ int main()
             system("CLS");
             switch (sequence[j]) {
             case 1:
-                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0A); // texte blanc (F) sur fond noir (0)
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0A); // texte vert (A) sur fond noir (0)
                 cout << "Vert ";
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0F); // texte blanc (F) sur fond noir (0)
                 cout << "Bleu ";
                 cout << "Rouge ";
-                cout << "VIolet";
+                cout << "Violet";
                 break;
             case 2:
                 cout << "Vert ";
-                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0B); // texte blanc (F) sur fond noir (0)
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0B); // texte bleu (B) sur fond noir (0)
                 cout << "Bleu ";
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0F); // texte blanc (F) sur fond noir (0)
                 cout << "Rouge ";
@@ -65,7 +65,7 @@ int main()
             case 3:
                 cout << "Vert ";
                 cout << "Bleu ";
-                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0C); // texte blanc (F) sur fond noir (0)
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0C); // texte rouge (C) sur fond noir (0)
                 cout << "Rouge ";
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0F); // texte blanc (F) sur fond noir (0)
                 cout << "Violet";
@@ -74,7 +74,7 @@ int main()
                 cout << "Vert ";
                 cout << "Bleu ";
                 cout << "Rouge ";
-                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0D); // texte blanc (F) sur fond noir (0)
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0D); // texte violet (D) sur fond noir (0)
                 cout << "Violet";
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0F); // texte blanc (F) sur fond noir (0)
                 break;
@@ -85,9 +85,7 @@ int main()
             cout << "\n" << k + 1 << ". digits : ";
             cin >> player_sequence;
 
-            if (player_sequence != sequence[k]) {
-                isFalse = true;
-            }
+            if (player_sequence != sequence[k]) isFalse = true;
         }
         level++;
     }
